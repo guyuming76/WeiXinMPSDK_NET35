@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>..\..\Senparc.Weixin.MP.BuildOutPut\Senparc.Weixin.XML</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -73,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Entities\Request\RequestMessageBase.cs" />
     <Compile Include="Entities\Response\ResponseMessageBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
